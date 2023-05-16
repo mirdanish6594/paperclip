@@ -60,9 +60,6 @@ body {
    font-family: 'Montserrat', sans-serif;
    color: white;
 }
-.hero-btn {
-
-}
 
 /* button*/
 .hero-btn{
@@ -99,6 +96,7 @@ body {
 }
 #text-search {
   font-size: 100%;
+  padding-left: 5px;
 }
 .search-btn {
    height: 41px;
@@ -109,13 +107,13 @@ body {
 }
 #text-search {
   width: 453px;
-  padding: 7px 0 7px 0;
+  padding: 7px 0 7px 5px;
   margin-right: 23px;
   border-radius: 7px;
 }
 #dropdown {
   width: 453px;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 10px 5px;
   margin: 0 23px 0 0;
   border-radius: 7px;
   border-width: 1px;
@@ -124,6 +122,15 @@ body {
   margin-left: 20px;
 }
 /*  cards  */
+
+.card-publish-data {
+  color: grey;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.day {
+  padding-left: 20px;
+}
 .latest-listings {
   color: #3b3939;
   text-align: center;
@@ -153,7 +160,7 @@ body {
 .solution_cards_box .solution_card:hover {
   background: #309df0;
   color: #fff;
-  transform: scale(1.1);
+  transform: scale(1.05);
   z-index: 9;
 }
 
@@ -183,6 +190,9 @@ body {
   color: #309df0;
 }
 
+.read_more_btn {
+   background: linear-gradient(286.41deg, #8DC6E8 6.92%, #2D8CC5 67.83%) !important;
+}
 .solution_card .so_top_icon {
 }
 
@@ -251,6 +261,30 @@ body {
   height: 50px;
   object-fit: contain;
 }
+/* show more button*/
+.show-more-btn {
+    height: 40px;
+    width: 130px;
+    font-size: 18px;
+    background: linear-gradient(286.41deg, #8DC6E8 6.92%, #2D8CC5 67.83%);
+    margin: 10px 0 0 560px;
+    float: left;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    border: 0px;
+    color: #3b3939;
+    border-radius: 5px;
+
+}
+.show-more-btn:hover {
+    background-color: white;
+    
+    transform: scale(1.1);
+    border: 2px solid  linear-gradient(286.41deg, #8DC6E8 6.92%, #2D8CC5 67.83%);
+}
+.show-more-btn:hover a {
+  text-decoration: none;
+}
 
 /* footer*/
 .footer {
@@ -258,12 +292,14 @@ body {
   margin: 200px 0 -20px 0;
   height: 170px;
 }
-.logo-name {
+.logo-name > img {
+   width: 20vw;
    color: white;
    padding: 60px 0 0 80px;
+   margin-top: 10px;
 }
 .last-line {
-   margin: -50px 0 0 950px;
+   margin: -40px 0 0 950px;
    color: white;
    font-family: 'Montserrat', sans-serif;
 }
