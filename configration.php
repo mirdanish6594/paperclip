@@ -4,6 +4,7 @@
     $username = 'root';
     $password = '';
     
+
     $mysqli = new mysqli($host,$username,$password,$dbName);
 
     if ($mysqli -> connect_errno) {
