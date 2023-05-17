@@ -1,0 +1,101 @@
+@font-face{
+    font-family: 'Basique Pro';
+    src: url('Fonts/Basique_3.woff'), url('Fonts/Basique_3.woff') format('woff');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aquamarine;
+}
+.accent {
+    font-family:'Basique Pro' ;
+}
+
+.nav-List{
+    display: flex;
+    height: 130px;
+    margin-bottom: 5px;
+    background: linear-gradient(286.41deg, #8DC6E8 6.92%, #2D8CC5 67.83%);
+    justify-content: space-between;
+    
+}
+.paperclip-logo {
+    height:40px;
+    margin: 25px 0 0 30px;
+}
+.nav-List .fa-user {
+    height:40px;
+    margin: 25px 25px 0 35px;
+}
+.owl-carousel{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.desc {
+    display: flex;
+    /* flex-wrap:wrap ;  use for media query */
+    margin: 10px 10px;
+    justify-content: space-around;
+}
+.card {
+    margin-right: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+}
+.Container {
+    display: flex;
+    justify-items: start;
+    margin-top: 50px;
+    margin-left: 10px;
+    padding-left: 13vw;
+    
+}
+.box {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.box:hover {
+    transform: scale(1.05);
+    border: #2D8CC5;
+    cursor: pointer;
+  }
+.nav-bottom{
+    display: flex;
+    height: 90px;
+    margin-top: 20px;
+    padding-right: 20px;
+    background: linear-gradient(90deg, #8DC6E8 14.32%, rgba(141, 198, 232, 0) 131.25%);
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bottom p {
+    margin: 0;
+    padding-right: 10px; 
+    color: rgb(194, 213, 230);
+  }
+
+  .nav-bottom a {
+    margin: 0;
+  }
+
+
+@media (max-width:700px){
+     
+    .Container {
+        display: flex;
+        justify-items: start;
+        margin-top: 50px;
+        margin-left: 10px;
+        padding-left: 13vw;
+        flex-wrap: wrap;
+    }
+    .desc {
+        display: flex;
+        flex-wrap:wrap ;  
+        margin: 10px 10px;
+        justify-content: space-around;
+    }
+  }
