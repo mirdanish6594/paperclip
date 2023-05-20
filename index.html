@@ -13,33 +13,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Nunito:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- laoding animation
+    <div class="overlay-anim">
+ <div class="overlayDoor"></div>
+ <div class="overlayContent">
+   <div class="loader">
+     <div class="inner"></div>
+   </div>
+ </div>
+</div>-->
     <!-- Hero section -->
-    <section class="main">
-      <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-      <div class="navbar-header mt-4">
-         <a class="navbar-brand reusio-logo" href="#"><img src="images/paperclip.png" alt="main-logo"></a>
-      </div>
-         <ul class="nav navbar-nav navbar-right">
-          <li> <a href="#"><i class="fa fa-solid fa-user fa-3x user-icon" style="color: #ffffff;"></i></a></li>
-         </ul>
-     </div>
-     </nav>
+    <div class="row main">
+      <div class="container">
+        <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+        <div class="navbar-header mt-2">
+           <a class="navbar-brand reusio-logo" href="#"><img src="images/paperclip.png" alt="main-logo"></a>
+        </div>
+           <ul class="nav navbar-nav navbar-right">
+            <li><button class="publish-btn"><strong>Publish a listing</strong></button></li>
+            <li> <a href="#"><i class="fa fa-solid fa-user fa-3x user-icon" style="color: #ffffff;"></i></a></li>
+           </ul>
+       </div>
+       </nav>
 
-     <div class="main-text">
-           <h1 class="name accent">paperclip</h1>
-           <p class="main-line">Your ultimate college marketplace for secondhand finds</p>
-           <p class="sub-head"><strong>Buy, sell and save with paperclip! Our user-friendly platform connects college students to second-hand items on campus. Enjoy a wide selection of affordable goods.</strong></p>
-           <p class="sub-head"><strong>Join today to trade your unwanted items or find the things your need for less.</strong></p>
-           <button class="hero-btn"><strong>Buy now</strong></button>
-           <button class="hero-btn"><strong>Sell something</strong></button>
-           <div class="illustration"><img src="images/Rectangle-1.png" class="rectangle-1-image" alt="Rectangle1"></div>
-           <div class="illustration"><img src="images/Rectangle-2.png" class="rectangle-2-image" alt="Rectangle2"></div>
-           <div class="illustration"><img src="images/Rectangle-2.png" class="rectangle-3-image" alt="Rectangle3"></div>
-           <div class="illustration"><img src="images/Charity.png" class="main-image" alt="Charity-illustration"></div>
-     </div>
+       <div class="main-text">
+             <h1 class="name accent">paperclip</h1>
+             <p class="main-line">Your ultimate college marketplace for secondhand finds</p>
+             <p class="sub-head"><strong>Buy, sell and save with paperclip! Our user-friendly platform connects college students to second-hand items on campus. Enjoy a wide selection of affordable goods.</strong></p>
+             <p class="sub-head"><strong>Join today to trade your unwanted items or find the things your need for less.</strong></p>
+             <!--<button class="hero-btn"><strong>Buy now</strong></button>
+             <button class="hero-btn"><strong>Sell something</strong></button>
+             <div class="illustration"><img src="images/Rectangle-1.png" class="rectangle-1-image" alt="Rectangle1"></div>
+             <div class="illustration"><img src="images/Rectangle-2.png" class="rectangle-2-image" alt="Rectangle2"></div>
+             <div class="illustration"><img src="images/Rectangle-2.png" class="rectangle-3-image" alt="Rectangle3"></div>
+             <div class="illustration"><img src="images/Charity.png" class="main-image" alt="Charity-illustration"></div>-->
+       </div>
+
+    </div>
+
+    </div>
+
 <!-- Searching section-->
-<div class="searching">
+<div class="searching container my-5">
   <form>
     <form action="/action_page.php" id="searching-form">
       <table class="search-items">
@@ -69,67 +85,43 @@
 </form>
 </div>
 <!-- Cards-->
-  </section>
   <h1 class="latest-listings accent"><strong>Latest Listings</strong></h1>
   <br><br><br><br><br>
-<div class="section_our_solution">
-<div class="row">
-<div class="col-md-6">
+  <div class="section_our_solution">
+  <div class="row">
+  <div class="col-md-6">
   <div class="our_solution_category">
-  <div class="three-cards">
-    <div class="solution_cards_box">
-      <table>
-      <tr>
-        <td>
-          <div class="solution_card">
-            <div class="hover_color_bubble"></div>
-              <i class="fa fa-5x fa-solid fa-vest" style="color: #3b3939;"></i>
-            <div class="solu_title">
-              <h3>Lab coat</h3>
-            </div>
-            <div class="solu_description">
-              <p>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-              </p>
-              <table class="card-publish-data">
-                <tr>
-                  <td>By Dan</td>
-                  <td class="day">4 days ago</td>
-                </tr>
-              </table>
-              <button type="button" class="read_more_btn">Read More</button>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div class="solution_card">
-            <div class="hover_color_bubble"></div>
-            <i class="fa fa-5x fa-solid fa-ruler-combined" style="color: #3b3939;"></i>
-            <div class="solu_title">
-              <h3>Drafter</h3>
-            </div>
-            <div class="solu_description">
-              <p>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-              </p>
-              <table class="card-publish-data">
-                <tr>
-                  <td>By Ipsum Dolor</td>
-                  <td class="day">today</td>
-                </tr>
-              </table>
-              <button type="button" class="read_more_btn">Read More</button>
-            </div>
-          </div>
+   <div class="solution_cards_box">
+         <div class="three-cards">
+         <!--card-1-->
+         <div class="solution_cards_box sol_card_top_1">
+           <div class="solution_card">
+             <div class="hover_color_bubble"></div>
+               <i class="fa fa-5x fa-solid fa-briefcase" style="color: #3b3939;"></i>
+             <div class="solu_title">
+               <h3>Geomentry Box</h3>
+             </div>
+             <div class="solu_description">
+               <p>
+                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+               </p>
+               <table class="card-publish-data">
+                 <tr>
+                   <td>By Eren</td>
+                   <td class="day">1 days ago</td>
+                 </tr>
+               </table>
+               <button type="button" class="read_more_btn">Read More</button>
+             </div>
+           </div>
         </div>
-      </td>
-        <td>
-          <div class="solution_cards_box sol_card_top_4">
+        <!--card-2-->
+        <div class="solution_cards_box sol_card_top_2">
             <div class="solution_card">
               <div class="hover_color_bubble"></div>
-                <i class="fa fa-5x fa-solid fa-wand" style="color: #3b3939;"></i>
+              <i class="fa fa-5x fa-solid fa-ruler-combined" style="color: #3b3939;"></i>
               <div class="solu_title">
-                <h3>Chart holder</h3>
+                <h3>Drafter</h3>
               </div>
               <div class="solu_description">
                 <p>
@@ -137,7 +129,97 @@
                 </p>
                 <table class="card-publish-data">
                   <tr>
-                    <td>By Lorem Ipsum</td>
+                    <td>By Ipsum Dolor</td>
+                    <td class="day">today</td>
+                  </tr>
+                </table>
+                <button type="button" class="read_more_btn">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!--card-3-->
+          <div class="solution_cards_box sol_card_top_2">
+              <div class="solution_card">
+                <div class="hover_color_bubble"></div>
+                  <i class="fa fa-5x fa-solid fa-slash" style="--fa-primary-color: #3b3939; --fa-secondary-color: #3b3939;"></i>
+                <div class="solu_title">
+                  <h3>Chart holder</h3>
+                </div>
+                <div class="solu_description">
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  </p>
+                  <table class="card-publish-data">
+                    <tr>
+                      <td>By Lorem Ipsum</td>
+                      <td class="day">4 days ago</td>
+                    </tr>
+                  </table>
+                  <button type="button" class="read_more_btn">Read More</button>
+                </div>
+              </div>
+           </div>
+           </div>
+            <div class="three-cards">
+            <!--card-4-->
+            <div class="solution_cards_box sol_card_top_4">
+              <div class="solution_card">
+                <div class="hover_color_bubble"></div>
+                  <i class="fa fa-5x fa-solid fa-book" style="color: #3b3939;"></i>
+                <div class="solu_title">
+                  <h3>Books</h3>
+                </div>
+                <div class="solu_description">
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  </p>
+                  <table class="card-publish-data">
+                    <tr>
+                      <td>By someone</td>
+                      <td class="day">4 days ago</td>
+                    </tr>
+                  </table>
+                  <button type="button" class="read_more_btn">Read More</button>
+                </div>
+              </div>
+         </div>
+         <!--card-5-->
+         <div class="solution_cards_box sol_card_top_5">
+              <div class="solution_card">
+                <div class="hover_color_bubble"></div>
+                  <i class=" fa fa-5x fa-solid fa-file" style="color: #3b3939;"></i>
+                <div class="solu_title">
+                  <h3>Notes</h3>
+                </div>
+                <div class="solu_description">
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  </p>
+                  <table class="card-publish-data">
+                    <tr>
+                      <td>By sam</td>
+                      <td class="day">2 days ago</td>
+                    </tr>
+                  </table>
+                  <button type="button" class="read_more_btn">Read More</button>
+                </div>
+              </div>
+            </div>
+            <!--card-6-->
+            <div class="solution_cards_box sol_card_top_6">
+              <div class="solution_card">
+              <div class="hover_color_bubble"></div>
+                <i class="fa fa-5x fa-solid fa-vest" style="color: #3b3939;"></i>
+              <div class="solu_title">
+                <h3>Lab coat</h3>
+              </div>
+              <div class="solu_description">
+                <p>
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                </p>
+                <table class="card-publish-data">
+                  <tr>
+                    <td>By Dan</td>
                     <td class="day">4 days ago</td>
                   </tr>
                 </table>
@@ -145,84 +227,15 @@
               </div>
             </div>
           </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="solution_cards_box sol_card_top_4">
-            <div class="solution_card">
-              <div class="hover_color_bubble"></div>
-                <i class="fa fa-5x fa-solid fa-book" style="color: #3b3939;"></i>
-              <div class="solu_title">
-                <h3>Books</h3>
-              </div>
-              <div class="solu_description">
-                <p>
-                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                </p>
-                <table class="card-publish-data">
-                  <tr>
-                    <td>By someone</td>
-                    <td class="day">4 days ago</td>
-                  </tr>
-                </table>
-                <button type="button" class="read_more_btn">Read More</button>
-              </div>
-            </div>
-        </td>
-        <td>
-          <div class="solution_cards_box sol_card_top_4">
-            <div class="solution_card">
-              <div class="hover_color_bubble"></div>
-                <i class=" fa fa-5x fa-solid fa-file" style="color: #3b3939;"></i>
-              <div class="solu_title">
-                <h3>Notes</h3>
-              </div>
-              <div class="solu_description">
-                <p>
-                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                </p>
-                <table class="card-publish-data">
-                  <tr>
-                    <td>By sam</td>
-                    <td class="day">2 days ago</td>
-                  </tr>
-                </table>
-                <button type="button" class="read_more_btn">Read More</button>
-              </div>
-            </div>
-        </td>
-        <td>
-          <div class="solution_cards_box sol_card_top_4">
-            <div class="solution_card">
-              <div class="hover_color_bubble"></div>
-                <i class="fa fa-5x fa-solid fa-briefcase" style="color: #3b3939;"></i>
-              <div class="solu_title">
-                <h3>Geomentry Box</h3>
-              </div>
-              <div class="solu_description">
-                <p>
-                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                </p>
-                <table class="card-publish-data">
-                  <tr>
-                    <td>By Eren</td>
-                    <td class="day">1 days ago</td>
-                  </tr>
-                </table>
-                <button type="button" class="read_more_btn">Read More</button>
-              </div>
-            </div>
-        </td>
-      </tr>
-    </table>
-    </div>
+           </div>
+   </div>
   </div>
-</div>
-</div>
-</div>
-  </section>
-
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!--show-more-btn-->
   <button type="button" class="show-more-btn">Show more</button>
 
 <!-- footer -->
@@ -233,6 +246,7 @@
       <p class="email"> <a href="#"><strong>random@gmail.com</strong></a></p>
     </div>
 </div>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
