@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 2px;
+}
+body {
+    background-color: #8DC6E8;
+
+}
+.paperclip-logo {
+    display: flex;
+    justify-content: center;
+    height: 45px;
+}
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+.main-form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 28%;
+    margin-left: 28%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 6px;
+    border-radius: 5px;
+}
+.sub-button{
+    cursor: pointer;
+}
+.sub-button:hover {
+    background-color: #a4b1ed;
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+    color: #000;
+}
+.sub-button:active {
+    background-color: #a4b1ed;
+    transform: scale(0.99);
+    transition: all 0.3s ease-in-out;
+    color: #000;
+}
+
+label {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+input,textarea {
+    margin-bottom: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+input,textarea:hover {
+    border: 1px solid #585c81;
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+}
+@media (max-width: 600px) {
+    .main-form {
+        display: flex;
+        flex-direction: column;
+        margin-right: 8%;
+        margin-left: 8%;
+        margin-top: 5%;
+    }
+  }
