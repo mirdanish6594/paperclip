@@ -1,0 +1,163 @@
+@font-face{
+    font-family: 'Basique Pro';
+    src: url('Fonts/Basique_3.woff'), url('Fonts/Basique_3.woff') format('woff');
+}
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden
+}
+/*top*/
+.accent {
+  font-family: 'Basique Pro', sans-serif;
+}
+.main {
+  background: linear-gradient(286.41deg, #8DC6E8 6.92%, #2D8CC5 67.83%);
+  height: 17vh;
+}
+.navbar-brand > img {
+  width: 16vw;
+}
+
+.navbar-header {
+  margin-left: 42px;
+  color: white;
+}
+.user-icon {
+    float: right;
+    margin: -50px 20px 0 0;
+}
+.main-text {
+  margin: 150px 0 0 50px;
+  width: 35%;
+}
+.name {
+    color: white;
+    font-size: 46px;
+}
+.main-line {
+   color: white;
+   font-size: 28px;
+}
+.sub-head {
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+}
+/* Publish button*/
+.publish-btn{
+    height: 45px;
+    width: 160px;
+    margin:  20px 100px 0 0;
+    font-size: 18px;
+    background: white;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    border: 0px;
+    color: #3b3939;
+    border-radius: 5px;
+}
+.publish-btn:hover{
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+.publish-btn:hover a {
+  text-decoration: none;
+}
+/*profile*/
+/*body{margin-top:20px;
+background-color:#f2f6fc;
+color:#69707a;
+}*/
+#exampleFormControlTextarea1 {
+  width: 97%;
+  margin-left: 10px;
+}
+.profile {
+  width: 90%;
+  margin-left: -150px;
+}
+.img-account-profile {
+    height: 10rem;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.card {
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+}
+.card .card-header {
+    font-weight: 500;
+}
+.card-header:first-child {
+    border-radius: 0.35rem 0.35rem 0 0;
+}
+.card-header {
+    padding: 1rem 1.35rem;
+    margin-bottom: 0;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+.form-control, .dataTable-input {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #69707a;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c5ccd6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.35rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.nav-borders .nav-link.active {
+    color: #0061f2;
+    border-bottom-color: #0061f2;
+}
+.nav-borders .nav-link {
+    color: #69707a;
+    border-bottom-width: 0.125rem;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* footer*/
+.footer {
+  background: linear-gradient(286.41deg, #8DC6E8 6.92%, #2D8CC5 67.83%);
+  margin: 200px 0 -20px 0;
+  height: 170px;
+  width: 100%;
+}
+.logo-name > img {
+   width: 20vw;
+   color: white;
+   padding: 60px 0 0 80px;
+   margin-top: 10px;
+}
+.last-line {
+   margin: -40px 0 0 950px;
+   color: white;
+   font-family: 'Montserrat', sans-serif;
+}
+.email {
+  margin: 0 0 0 950px;
+  font-family: 'Montserrat', sans-serif;
+}
+.email a {
+  text-decoration: none;
+  color: white;
+}
+.email:hover a {
+  color: lightblue;
+}

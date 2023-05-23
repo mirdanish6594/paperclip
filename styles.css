@@ -162,7 +162,7 @@ body {
 }
 /* Publish button*/
 .publish-btn{
-    height: 50px;
+    height: 45px;
     width: 160px;
     margin:  20px 100px 0 0;
     font-size: 18px;
@@ -245,14 +245,20 @@ body {
 }
 /*  cards  */
 
-.three-cards {
+.all-cards {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+}
+.solution-cards-box {
+  width: 90%;
 }
 .card-publish-data {
   color: grey;
   font-size: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+.ratings {
+  margin-bottom: 15px;
 }
 .day {
   padding-left: 20px;

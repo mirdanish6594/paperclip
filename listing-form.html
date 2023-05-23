@@ -25,33 +25,42 @@
             <li><button class="publish-btn"><strong>Publish a listing</strong></button></li>
             <li> <a href="#"><i class="fa fa-solid fa-user fa-3x user-icon" style="color: #ffffff;"></i></a></li>
            </ul>
-       </div>
+         </div>
        </nav>
+     </div>
+  </div>
 
        <!--form-->
        <div class="listing-form">
          <form action="/action_page.php" id="survey-form">
            <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-           <div class="upload-files-container form-container">
-           <div class="drag-file-area">
-             <span class="material-icons-outlined upload-icon"> file_upload </span>
-             <h3 class="dynamic-message"> Drag & drop any file here </h3>
-             <label class="label"> or <span class="browse-files"> <input type="file" class="default-file-input"/> <span class="browse-files-text">browse file</span> <span>from device</span> </span> </label>
+           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+             <div class="carousel-inner">
+          
+             </div>
+             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+             </a>
+             <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+             </a>
            </div>
-           <span class="cannot-upload-message"> <span class="material-icons-outlined">error</span> Please select a file first <span class="material-icons-outlined cancel-alert-button">cancel</span> </span>
-           <div class="file-block">
-             <div class="file-info"> <span class="material-icons-outlined file-icon">description</span> <span class="file-name"> </span> | <span class="file-size">  </span> </div>
-             <span class="material-icons remove-file-icon">delete</span>
-             <div class="progress-bar"> </div>
-           </div>
-           <button type="button" class="upload-button"> Upload </button>
-           </div>
-           <br>
-               <label id="name-label">Enter the title of the listing</label>
+    <!-- Select multiple files-->
+
+  <div class="select-files">
+    <label for="files"></label>
+       <input type="file" id="files" multiple="multiple" accept="image/jpeg, image/jpg, image/png"/>
+       <output id="result"/>
+  </div>
+
+           <br><br>
+               <label id="name-label" class="text-list-form">Enter the title of the listing</label>
                <br>
                <input type="text" name="Name" required id="name" placeholder="Enter the title..."/>
-               <br>
-              <label id="current-role">Categories</label>
+               <br><br>
+              <label id="current-role" class="text-list-form">Categories</label>
               <br>
               <select id ="dropdown">
               <option selected disabled>Category</option>
@@ -61,12 +70,12 @@
                 <option value="4">Calculator</option>
                 <option value="5">Chart Holder</option>
              </select>
-             <br>
-         <label id="comments">Enter the details of the listing</label>
+             <br><br>
+         <label id="comments" class="text-list-form">Enter the details of the listing</label>
          <br>
          <textarea name="comment" form="usrform" id="feedback" placeholder="Enter details..."></textarea>
-         <br>
-         <input type="submit" value="Submit" id="Submit" class="submit-btn">
+         <br><br>
+         <input type="submit" value="Submit" id="Submit" class="submit-btn" style="font-weight: bolder; color: #3b3939;">
          </form>
        </div>
 
@@ -78,6 +87,7 @@
       <p class="email"> <a href="#"><strong>random@gmail.com</strong></a></p>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script src="listing-form.js" charset="utf-8"></script>
   </body>
 </html>
