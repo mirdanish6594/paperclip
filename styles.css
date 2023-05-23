@@ -244,14 +244,12 @@ body {
   margin-left: 20px;
 }
 /*  cards  */
-
 .all-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important; /* Adjust this width as per your requirement */
+  gap: 5px  !important;
 }
-.solution-cards-box {
-  width: 90%;
-}
+
 .card-publish-data {
   color: grey;
   font-size: 14px;
@@ -270,9 +268,7 @@ body {
   margin-top: 100px;
   margin-bottom: -100px;
 }
-.section_our_solution .row {
-  align-items: center;
-}
+
 
 .solution_cards_box .solution_card {
   background: #fff;
@@ -284,9 +280,9 @@ body {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  min-height: 350px;
+  height: 350px;
   transition: 0.7s;
-  min-width: 300px;
+  width: 300px
 }
 
 .solution_cards_box .solution_card:hover {
