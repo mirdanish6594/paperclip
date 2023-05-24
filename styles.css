@@ -203,6 +203,7 @@ body {
     transform: scale(1.1);
     border: 2px solid white;
 }
+
 .hero-btn:hover a {
   text-decoration: none;
 }
@@ -429,12 +430,12 @@ body {
    margin-top: 10px;
 }
 .last-line {
-   margin: -40px 0 0 950px;
+   margin: -40px 0 0 75vw;
    color: white;
    font-family: 'Montserrat', sans-serif;
 }
 .email {
-  margin: 0 0 0 950px;
+  margin: 0 0 0 75vw;
   font-family: 'Montserrat', sans-serif;
 }
 .email a {
